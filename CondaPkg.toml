@@ -1,7 +1,6 @@
 channels = ["conda-forge", "pytorch"]
 
 [deps]
-pytorch-cuda = ""
 opencv = ""
 pytorch = ""
 torchvision = ""
