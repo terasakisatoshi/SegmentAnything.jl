@@ -5,6 +5,7 @@ opencv = ""
 pytorch = ""
 torchvision = ""
 numpy = ""
+nomkl = ""
 torchaudio = ""
 
 [pip.deps]
