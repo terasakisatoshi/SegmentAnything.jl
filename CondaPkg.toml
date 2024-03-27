@@ -1,4 +1,4 @@
-channels = ["pytorch", "nvidia"]
+channels = ["conda-forge", "pytorch"]
 
 [deps]
 pytorch-cuda = ""
