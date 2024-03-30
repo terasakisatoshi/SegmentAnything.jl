@@ -24,6 +24,7 @@ begin
 		)
 	)
 	Pkg.add(["Images", "ImageShow", "ImageDraw", "PythonCall"])
+	Pkg.add(["PlutoUI"])
 
 	using SegmentAnything: ImageMask, SamPredictor
 	using SegmentAnything: SamAutomaticMaskGenerator, generate
