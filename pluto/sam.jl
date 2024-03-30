@@ -17,9 +17,16 @@ end
 # ╔═╡ 1a9f06b0-ebf9-11ee-2e9d-bb6f116fff54
 begin
 	using Pkg
+	Pkg.activate(;temp=true)
 	Pkg.add(
-		url="https://github.com/terasakisatoshi/SegmentAnything.jl", rev="terasaki/pluto-notebook"
+		PackageSpec(
+			url="https://github.com/terasakisatoshi/SegmentAnything.jl", rev="terasaki/pluto-notebook"
+		)
 	)
+end
+
+# ╔═╡ e6bc230c-6bd6-443a-81c7-f904e9964fe6
+begin
 	using SegmentAnything: ImageMask, SamPredictor
 	using SegmentAnything: SamAutomaticMaskGenerator, generate
 end
@@ -216,12 +223,13 @@ end
 # ╟─e087ee47-d483-44cc-a152-6ee517ff1793
 # ╟─97b34600-a088-4187-b1d2-7925777811bc
 # ╠═1a9f06b0-ebf9-11ee-2e9d-bb6f116fff54
+# ╠═e6bc230c-6bd6-443a-81c7-f904e9964fe6
 # ╟─3aa93c57-e4eb-4ead-85d4-900a3728a2aa
 # ╠═5e1544cc-a143-4769-8827-21d960d49167
 # ╠═167d404c-0e43-4dd0-aff4-c30e2d36d290
 # ╟─460d3514-7297-4444-8358-94f0f6986142
 # ╠═7b7757d9-f3f0-47f0-aa21-51ba38b62de8
-# ╠═5876c2b7-e5f8-40ff-b379-7724420d5791
+# ╟─5876c2b7-e5f8-40ff-b379-7724420d5791
 # ╠═1e6f525f-9127-4ef2-be38-0ed922adf1ca
 # ╟─ffc8e0a1-0113-4071-87de-6cb03c4ba843
 # ╠═14515040-ee77-45a4-a531-bef5902898af
