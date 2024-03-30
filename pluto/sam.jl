@@ -23,6 +23,7 @@ begin
 			url="https://github.com/terasakisatoshi/SegmentAnything.jl", rev="terasaki/pluto-notebook"
 		)
 	)
+	Pkg.add(["Images", "ImageShow", "ImageDraw", "PythonCall"])
 
 	using SegmentAnything: ImageMask, SamPredictor
 	using SegmentAnything: SamAutomaticMaskGenerator, generate
