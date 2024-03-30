@@ -23,10 +23,7 @@ begin
 			url="https://github.com/terasakisatoshi/SegmentAnything.jl", rev="terasaki/pluto-notebook"
 		)
 	)
-end
 
-# ╔═╡ e6bc230c-6bd6-443a-81c7-f904e9964fe6
-begin
 	using SegmentAnything: ImageMask, SamPredictor
 	using SegmentAnything: SamAutomaticMaskGenerator, generate
 end
@@ -223,7 +220,6 @@ end
 # ╟─e087ee47-d483-44cc-a152-6ee517ff1793
 # ╟─97b34600-a088-4187-b1d2-7925777811bc
 # ╠═1a9f06b0-ebf9-11ee-2e9d-bb6f116fff54
-# ╠═e6bc230c-6bd6-443a-81c7-f904e9964fe6
 # ╟─3aa93c57-e4eb-4ead-85d4-900a3728a2aa
 # ╠═5e1544cc-a143-4769-8827-21d960d49167
 # ╠═167d404c-0e43-4dd0-aff4-c30e2d36d290
