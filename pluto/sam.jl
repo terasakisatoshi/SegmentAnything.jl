@@ -17,9 +17,9 @@ end
 # ╔═╡ 1a9f06b0-ebf9-11ee-2e9d-bb6f116fff54
 begin
 	using Pkg
-	Pkg.activate(".")
-	Pkg.build()
-	Pkg.instantiate()
+	Pkg.add(
+		url="https://github.com/terasakisatoshi/SegmentAnything.jl", rev="terasaki/pluto-notebook"
+	)
 	using SegmentAnything: ImageMask, SamPredictor
 	using SegmentAnything: SamAutomaticMaskGenerator, generate
 end
